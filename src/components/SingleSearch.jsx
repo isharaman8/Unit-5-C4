@@ -7,24 +7,14 @@ export const SingleSearch = () => {
 	const reqItem = useSelector((store) => store.items).find((c) => c.id == id);
 	if (!reqItem || !reqItem?.id) return <p>No Item Found</p>;
 
-	const {
-		id,
-		title,
-		url,
-		description,
-		author,
-		creation_date,
-		explicit,
-		quality,
-	} = reqItem;
 	return (
 		<div id="detailed-result">
-			<p className="title">Title: {}</p>
-			<p className="desc"></p>
-			<p className="author"></p>
-			<p className="creation-date"></p>
-			<p className="explicit"></p>
-			<p className="quality"></p>
+			<p className="title">Title: {reqItem.title}</p>
+			<p className="desc">Description: {reqItem.description}</p>
+			<p className="author">Author: {reqItem.author}</p>
+			<p className="creation-date">Creation-Date: {reqItem["creation_date"]}</p>
+			<p className="explicit">Explicit: {reqItem.explicit ? "Yes" : "No"}</p>
+			<p className="quality">Quality: {reqItem.quality}</p>
 		</div>
 	);
 };
