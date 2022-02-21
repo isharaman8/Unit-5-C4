@@ -1,0 +1,42 @@
+#navbar {
+	height: 50px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 10px;
+	gap: 10px;
+
+	h2 {
+		margin-right: 10px;
+		font-size: 30px;
+
+		a {
+			color: orangered;
+			text-decoration: none;
+		}
+	}
+
+	input {
+		border-radius: 5px;
+		height: 100%;
+		padding: 0 5px;
+		border: 1px solid rgb(189, 189, 189);
+	}
+
+	button {
+		border-radius: 5px;
+		font-size: 17px;
+		height: 100%;
+		color: rgb(35, 35, 35);
+		padding: 0 10px;
+		background-color: whitesmoke;
+		border: 1px solid rgb(189, 189, 189);
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		}
+	}
+}

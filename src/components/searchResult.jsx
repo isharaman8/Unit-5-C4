@@ -10,6 +10,7 @@ import {
 	sortTitleDesc,
 } from "../../store/actions";
 import { Navbar } from "./Navbar";
+import "./styles/searchresults.scss";
 
 export const SearchResult = () => {
 	const nitems = useSelector(
@@ -75,10 +76,9 @@ export const SearchResult = () => {
 								<Link to={`/page/${id}`}>{title}</Link> | {author}
 							</p>
 							<p>{description}</p>
-							<p>Creation Date: {date.toDateString()}</p>
-							<p>
-								Explicit: {explicit ? "Yes" : "No"} Quality %: {quality}
-							</p>
+							<p> {date.toDateString()}</p>
+							<p>{explicit ? "Yes" : "No"}</p>
+							<p>{quality}%</p>
 						</div>
 					);
 				})}

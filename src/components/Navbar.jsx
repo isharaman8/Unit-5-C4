@@ -1,7 +1,9 @@
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { addSearchItem } from "../../store/actions";
+
+import "./styles/navbar.scss";
 
 export const Navbar = () => {
 	const [ninput, setnInput] = useState("");
@@ -18,6 +20,9 @@ export const Navbar = () => {
 	};
 	return (
 		<div id="navbar">
+			<h2>
+				<Link to="/">Google</Link>{" "}
+			</h2>
 			<input
 				onKeyPress={(e) => e.key === "Enter" && handleInput()}
 				onChange={(e) => {

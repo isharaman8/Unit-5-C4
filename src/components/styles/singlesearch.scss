@@ -1,0 +1,55 @@
+#detailed-result {
+	text-align: justify;
+	margin: 20px;
+
+	.title {
+		font-size: 30px;
+		color: rgb(29, 29, 29);
+	}
+
+	.desc {
+		color: rgb(59, 59, 59);
+		width: 500px;
+		&::before {
+			content: "Description: ";
+			font-weight: 600;
+			color: rgb(34, 34, 34);
+		}
+	}
+
+	.author {
+		color: rgb(59, 59, 59);
+		&::before {
+			content: "Author: ";
+			font-weight: 600;
+			color: rgb(34, 34, 34);
+		}
+	}
+
+	.creation-date {
+		color: rgb(59, 59, 59);
+		&::before {
+			content: "Creation-Date: ";
+			font-weight: 600;
+			color: rgb(34, 34, 34);
+		}
+	}
+
+	.explicit {
+		color: rgb(59, 59, 59);
+		&::before {
+			content: "Explicit: ";
+			font-weight: 600;
+			color: rgb(34, 34, 34);
+		}
+	}
+
+	.quality {
+		color: rgb(59, 59, 59);
+		&::before {
+			content: "Quality: ";
+			font-weight: 600;
+			color: rgb(34, 34, 34);
+		}
+	}
+}

@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addSearchItem } from "../../store/actions";
 
+import "./styles/searchTab.scss";
+
 export const SearchTab = () => {
 	const [ninput, setnInput] = useState("");
 	// const items = useSelector((store) => store.items);
